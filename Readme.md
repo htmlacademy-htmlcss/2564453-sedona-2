@@ -1,7 +1,8 @@
 # Личный проект «Седона»
 
 * Студент: [Денис Родичев](https://up.htmlacademy.ru/htmlcss-individual/2/user/2564453).
-* Наставник: `Неизвестно`.
+* Наставник: [Сергей Остаповец](https://htmlacademy.ru/profile/seraphim).
+* Сайт: [Мой проект Седона](https://argonautden.github.io/2564453-sedona-2).
 
 ---
 
