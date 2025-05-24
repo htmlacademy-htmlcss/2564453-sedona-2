@@ -7,65 +7,71 @@
   </head>
 
   <body>
-    <container class="content">
+    <div class="container">
       <header class="page-header">
-        <a href="index.html"><img class="logo" src="#" alt="Логотип Седоны" /></a>
-        <ul class="site-navigation">
-          <li class="site-navigation-item currentpage">
-            <a href="index.html">Главная</a>
+        <a href="index.html"><img class="logo" src="images/logo.svg" width="140" height="70" alt="Логотип Седоны" /></a>
+        <ul class="site-navigation-list">
+          <li class="site-navigation-item">
+            <a class="navigation-link navigation-link-current" href="index.html">Главная</a>
           </li>
           <li class="site-navigation-item">
-            <a href="#">О Седоне</a>
+            <a class="navigation-link" href="#">О Седоне</a>
           </li>
           <li class="site-navigation-item">
-            <a href="catalog.html">Гостиницы</a>
+            <a class="navigation-link" href="catalog.html">Гостиницы</a>
           </li>
         </ul>
         <ul class="user-menu">
           <li class="user-menu-item">
-            <a href="#"><img class="search" src="#" alt="Поиск" /></a><span class="visually-hidden">Поиск</span>
+            <a class="navigation-user-link navigation-user-link-search" href="#">
+              <span class="visually-hidden">Поиск</span>
+            </a>
           </li>
           <li class="user-menu-item">
-            <a href="#"><img class="favorites" src="#" alt="Избранное" /></a>
-            <span class="likes-numbers">12</span>
-            <span class="visually-hidden">Добавленные в избранное отели</span>
+            <a class="navigation-user-link navigation-user-link-favorite" href="#">
+              <span class="visually-hidden">Добавленные в избранное отели</span>
+              <span class="likes-numbers">12</span>
+            </a>
           </li>
           <li class="user-menu-item">
-            <a class="button button-want" href="#">Хочу сюда!</a>
+            <a class="header-button" href="#">Хочу сюда!</a>
           </li>
         </ul>
       </header>
       <main class="main-content">
         <section class="hero">
           <h1 class="visually-hidden">Добро пожаловать в прекрасную Седону!</h1>
-          <img class="Welcome-sedona" src="#" alt="Добро пожаловать в Седону" />
+          <img class="Welcome-sedona" src="images/welcome.svg" width="458" height="352" alt="Добро пожаловать в Седону" />
           <h2 class="hero-title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
           <p class="hero-dsc">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
         </section>
-
         <section class="advantage">
           <ul class="advantage-list">
             <li class="advantage-list-items">
-              <h3 class="advantage-font title-white">Настоящий городок</h3>
-              <p class="advantage-font desc-white">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
-              <img class="sedona-city" src="#" alt="Город Седона" />
+              <div class="true-ciry">
+                <h3 class="advantage-font">Настоящий городок</h3>
+                <p class="advantage-font">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+              </div>
+              <img class="sedona-city" src="images/photo-city.jpg" width="800" height="385" alt="Город Седона" />
             </li>
             <li class="advantage-list-items">
-              <h3 class="advantage-font title-black">Небольшая площадь</h3>
-              <p class="advantage-font desc-black">Все достопримечательности находятся очень близко</p>
+              <h3 class="advantage-font">Небольшая площадь</h3>
+              <p class="advantage-font">Все достопримечательности находятся очень близко</p>
             </li>
             <li class="advantage-list-items">
-              <h3 class="advantage-font title-black">Красивая дорога</h3>
-              <p class="advantage-font desc-black">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+              <h3 class="advantage-font">Красивая дорога</h3>
+              <p class="advantage-font">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
             </li>
             <li class="advantage-list-items">
-              <h3 class="advantage-font title-black">Мало туристов</h3>
-              <p class="advantage-font desc-black">Большинство едет в Гранд Каньон и толпится там</p>
+              <h3 class="advantage-font">Мало туристов</h3>
+              <p class="advantage-font">Большинство едет в Гранд Каньон и толпится там</p>
             </li>
             <li class="advantage-list-items">
-              <img class="devil-bridge-img" src="#" alt="Мост дьявола" />
-              <h3 class="advantage-font title-white">Там есть мост дьявола</h3>
-              <p class="advantage-font desc-white">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
+              <img class="devil-bridge-img" src="images/photo-devil.jpg" width="800" height="385" alt="Мост дьявола" />
+              <div class="devil-bridge">
+                <h3 class="advantage-font">Там есть мост дьявола</h3>
+                <p class="advantage-font">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
+              </div>
             </li>
           </ul>
           <section class="cometosedona">
@@ -76,17 +82,14 @@
             <h2 class="visually-hidden">Причины, по которым Седона круче, чем Гранд-Каньон!</h2>
             <ul class="reasons-list">
               <li class="reasons-items">
-                <img class="home" src="#" alt="Жилье" />
                 <h3 class="reasons-title">Жильё</h3>
                 <p class="reasons-desc">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
               </li>
               <li class="reasons-items">
-                <img class="food" src="#" alt="Еда" />
                 <h3 class="reasons-title">Еда</h3>
                 <p class="reasons-desc">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
               </li>
               <li class="reasons-items">
-                <img class="presents" src="#" alt="Сувениры" />
                 <h3 class="reasons-title">Сувениры</h3>
                 <p class="reasons-desc">Не только китайского, но и настоящего местного производства!</p>
               </li>
@@ -98,9 +101,6 @@
           <p class="search-motel-desc">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
           <a class="search-motel-sedona-btn" href="catalog.html">Поиск гостиницы в Седоне</a>
         </section>
-      </main>
-
-      <footer class="main-footer">
         <section class="newsletter">
           <h2 class="newsletter-title">Подпишитесь на рассылку</h2>
           <p class="newsletter-desc">Только полезная информация и никакого спама, честное бойскаутское!</p>
@@ -112,23 +112,34 @@
             </button>
           </form>
         </section>
-        <div class="contacts">
+      </main>
+
+      <footer class="main-footer">
+        <section class="contacts">
           <ul class="socialmedia">
             <li class="socialmedia-item">
-              <img src="#" alt="Вконтакте" aria-hidden="true" />
+              <a class="socialmedia-link-vk" href="#">
+                <span class="visually-hidden">Вконтакте</span>
+              </a>
             </li>
             <li class="socialmedia-item">
-              <img src="#" alt="Telegram" aria-hidden="true" />
+              <a class="socialmedia-link-telegram" href="#">
+                <span class="visually-hidden">Телеграм</span>
+              </a>
             </li>
             <li class="socialmedia-item">
-              <img src="#" alt="Youtube" aria-hidden="true" />
+              <a class="socialmedia-link-youtube" href="#">
+                <span class="visually-hidden">Youtube</span>
+              </a>
             </li>
           </ul>
           <a class="telephone" href="tel:+7 (812) 812-12-12">+7 (812) 812-12-12</a>
-          <a href="https://htmlacademy.ru/"><img class="logo-html" src="#" alt="Логотип html-academy" aria-hidden="true" /></a>
-        </div>
+          <a class="html-academy-logo-footer" href="https://htmlacademy.ru/">
+            <span class="visually-hidden">Логотип html-academy</span>
+          </a>
+        </section>
       </footer>
-    </container>
+    </div>
   </body>
 
 </html>
