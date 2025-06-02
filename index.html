@@ -3,13 +3,17 @@
 
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
 
   <body>
     <div class="container">
       <header class="page-header">
-        <a href="index.html"><img class="logo" src="images/logo.svg" width="140" height="70" alt="Логотип Седоны" /></a>
+        <a href="index.html">
+          <img class="logo" src="images/logo.svg" width="140" height="70" alt="Логотип Седоны" />
+        </a>
         <ul class="site-navigation-list">
           <li class="site-navigation-item">
             <a class="navigation-link navigation-link-current" href="index.html">Главная</a>
@@ -41,36 +45,40 @@
       <main class="main-content">
         <section class="hero">
           <h1 class="visually-hidden">Добро пожаловать в прекрасную Седону!</h1>
-          <img class="Welcome-sedona" src="images/welcome.svg" width="458" height="352" alt="Добро пожаловать в Седону" />
-          <h2 class="hero-title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
-          <p class="hero-dsc">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
+          <img class="welcome-sedona" src="images/welcome.svg" width="458" height="352" alt="Добро пожаловать в Седону" />
         </section>
         <section class="advantage">
+          <h2 class="advantage-title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
+          <p class="advantage-dsc">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
           <ul class="advantage-list">
             <li class="advantage-list-items">
-              <div class="true-ciry">
-                <h3 class="advantage-font">Настоящий городок</h3>
-                <p class="advantage-font">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+              <div class="darker-blok">
+                <h3 class="darker-blok-title">Настоящий городок</h3>
+                <p class="darker-blok-desc">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
               </div>
-              <img class="sedona-city" src="images/photo-city.jpg" width="800" height="385" alt="Город Седона" />
+              <figure class="sedonaimage">
+                <img class="sedona-city" src="images/photo-city.jpg" width="800" height="385" alt="Город Седона" />
+              </figure>
+            </li>
+            <li class="advantage-list-items light">
+              <h3 class="advantage-font-title">Небольшая площадь</h3>
+              <p class="advantage-font-desc">Все достопримечательности находятся очень близко</p>
+            </li>
+            <li class="advantage-list-items darker">
+              <h3 class="advantage-font-title">Красивая дорога</h3>
+              <p class="advantage-font-desc">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+            </li>
+            <li class="advantage-list-items light">
+              <h3 class="advantage-font-title">Мало туристов</h3>
+              <p class="advantage-font-desc">Большинство едет в Гранд Каньон и толпится там</p>
             </li>
             <li class="advantage-list-items">
-              <h3 class="advantage-font">Небольшая площадь</h3>
-              <p class="advantage-font">Все достопримечательности находятся очень близко</p>
-            </li>
-            <li class="advantage-list-items">
-              <h3 class="advantage-font">Красивая дорога</h3>
-              <p class="advantage-font">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
-            </li>
-            <li class="advantage-list-items">
-              <h3 class="advantage-font">Мало туристов</h3>
-              <p class="advantage-font">Большинство едет в Гранд Каньон и толпится там</p>
-            </li>
-            <li class="advantage-list-items">
-              <img class="devil-bridge-img" src="images/photo-devil.jpg" width="800" height="385" alt="Мост дьявола" />
-              <div class="devil-bridge">
-                <h3 class="advantage-font">Там есть мост дьявола</h3>
-                <p class="advantage-font">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
+              <figure class="bridgeimage">
+                <img class="devilbridge" src="images/photo-devil.jpg" width="800" height="385" alt="Мост дьявола" />
+              </figure>
+              <div class="darker-blok">
+                <h3 class="darker-blok-title">Там есть мост дьявола</h3>
+                <p class="darker-blok-desc">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
               </div>
             </li>
           </ul>
@@ -81,7 +89,7 @@
           <section class="reasons">
             <h2 class="visually-hidden">Причины, по которым Седона круче, чем Гранд-Каньон!</h2>
             <ul class="reasons-list">
-              <li class="reasons-items">
+              <li class="reasons-items darker">
                 <h3 class="reasons-title">Жильё</h3>
                 <p class="reasons-desc">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
               </li>
@@ -89,7 +97,7 @@
                 <h3 class="reasons-title">Еда</h3>
                 <p class="reasons-desc">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
               </li>
-              <li class="reasons-items">
+              <li class="reasons-items darker">
                 <h3 class="reasons-title">Сувениры</h3>
                 <p class="reasons-desc">Не только китайского, но и настоящего местного производства!</p>
               </li>
@@ -105,7 +113,7 @@
           <h2 class="newsletter-title">Подпишитесь на рассылку</h2>
           <p class="newsletter-desc">Только полезная информация и никакого спама, честное бойскаутское!</p>
           <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
-            <label for="newsletter-email">Email</label>
+            <label class="visually-hidden" for="newsletter-email">Email</label>
             <input class="field" placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email" required />
             <button class="button newsletter-email-button" type="submit">
               <span class="button-name">Подписаться</span>
