@@ -11,18 +11,22 @@
   <body>
     <div class="container">
       <header class="page-header">
-        <a href="index.html"><img class="logo" src="images/logo.svg" width="140" height="70" alt="Логотип Седоны" /></a>
-        <ul class="site-navigation-list">
-          <li class="site-navigation-item">
-            <a class="navigation-link navigation-link-current" href="index.html">Главная</a>
-          </li>
-          <li class="site-navigation-item">
-            <a class="navigation-link" href="#">О Седоне</a>
-          </li>
-          <li class="site-navigation-item">
-            <a class="navigation-link" href="catalog.html">Гостиницы</a>
-          </li>
-        </ul>
+        <div class="header-menu">
+          <a href="index.html">
+            <img class="logo" src="images/logo.svg" width="140" height="70" alt="Логотип Седоны" />
+          </a>
+          <ul class="site-navigation-list">
+            <li class="site-navigation-item">
+              <a class="navigation-link navigation-link-current" href="index.html">Главная</a>
+            </li>
+            <li class="site-navigation-item">
+              <a class="navigation-link" href="#">О Седоне</a>
+            </li>
+            <li class="site-navigation-item">
+              <a class="navigation-link" href="catalog.html">Гостиницы</a>
+            </li>
+          </ul>
+        </div>
         <ul class="user-menu">
           <li class="user-menu-item">
             <a class="navigation-user-link navigation-user-link-search" href="#">
@@ -100,6 +104,12 @@
                   Стоимость, ₽:
                 </legend>
                 <label class="controls" for="price-range">
+                  <input type="number" placeholder="0" min="0">
+                  <span>от</span>
+                  <input type="number" placeholder="9000" min="0">
+                  <span>до</span>
+                </label>
+                <label class="controls" for="price-range">
                   <input type="range" id="price-range" name="price-range" min="0" max="9000" value="9000" />
                   <span>0 - 9000</span></label>
               </fieldset>
@@ -114,21 +124,23 @@
         <section class="search-results">
           <div class="sorting-results">
             <h2 class="sorting-results-title">Найдено гостиниц: 38</h2>
-            <select class="select-control" aria-label="Сортировка">
-              <option value="popular">Сначала популярные</option>
-              <option value="cheap" selected>Сначала дешёвые</option>
-              <option value="expensive">Сначала дорогие</option>
-            </select>
-            <div class="view">
-              <a class="viewbutton current-view" href="#">
-                <span class="visually-hidden">Показать карточки</span>
-              </a>
-              <a class="viewbutton" href="#">
-                <span class="visually-hidden">Показать список</span>
-              </a>
-              <a class="viewbutton" href="#">
-                <span class="visually-hidden">Показать список с картинкой</span>
-              </a>
+            <div class="sort-view">
+              <select class="select-control" aria-label="Сортировка">
+                <option value="popular">Сначала популярные</option>
+                <option value="cheap" selected>Сначала дешёвые</option>
+                <option value="expensive">Сначала дорогие</option>
+              </select>
+              <div class="view">
+                <a class="viewbutton current-view" href="#">
+                  <span class="visually-hidden">Показать карточки</span>
+                </a>
+                <a class="viewbutton-list-image" href="#">
+                  <span class="visually-hidden">Показать список</span>
+                </a>
+                <a class="viewbutton-list" href="#">
+                  <span class="visually-hidden">Показать список с картинкой</span>
+                </a>
+              </div>
             </div>
           </div>
           <ul class="hotel-list">
@@ -164,7 +176,7 @@
               <span class="hotel-card-price">От 5000 ₽</span>
               <div class="hotel-card-buttons">
                 <a class="hotel-card-button more" href="#">Подробнее</a>
-                <a class="hotel-card-button choosen" href="#">В избранное</a>
+                <a class="hotel-card-button choosen" href="#">В избранном</a>
               </div>
               <div class="hotel-card-raiting">
                 <p class="stars four">
@@ -237,9 +249,9 @@
             </li>
           </ul>
         </section>
-        <section class="newsletter catalog">
-          <h2 class="newsletter-title catalog">Подпишитесь на рассылку</h2>
-          <p class="newsletter-desc catalog">Только полезная информация и никакого спама, честное бойскаутское!</p>
+        <section class="newsletter">
+          <h2 class="newsletter-title inner">Подпишитесь на рассылку</h2>
+          <p class="newsletter-desc inner">Только полезная информация и никакого спама, честное бойскаутское!</p>
           <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
             <label for="newsletter-email">Email</label>
             <input class="field" placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email"
