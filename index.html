@@ -10,22 +10,20 @@
   <body>
     <div class="container">
       <header class="page-header">
-        <div class="header-menu">
-          <a href="index.html">
-            <img class="logo" src="images/logo.svg" width="140" height="70" alt="Логотип Седоны" />
-          </a>
-          <ul class="site-navigation-list">
-            <li class="site-navigation-item">
-              <a class="navigation-link current" href="index.html">Главная</a>
-            </li>
-            <li class="site-navigation-item">
-              <a class="navigation-link" href="#">О Седоне</a>
-            </li>
-            <li class="site-navigation-item navigation-link-current">
-              <a class="navigation-link" href="catalog.html">Гостиницы</a>
-            </li>
-          </ul>
-        </div>
+        <a class="logo-sedona" href="index.html">
+          <img class="logo" src="images/logo.svg" width="140" height="70" alt="Логотип Седоны" />
+        </a>
+        <ul class="site-navigation-list">
+          <li class="site-navigation-item">
+            <a class="navigation-link current" href="index.html">Главная</a>
+          </li>
+          <li class="site-navigation-item">
+            <a class="navigation-link" href="#">О Седоне</a>
+          </li>
+          <li class="site-navigation-item">
+            <a class="navigation-link" href="catalog.html">Гостиницы</a>
+          </li>
+        </ul>
         <ul class="user-menu">
           <li class="user-menu-item">
             <a class="navigation-user-link search" href="#">
@@ -52,36 +50,36 @@
           <h2 class="advantage-title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
           <p class="advantage-dsc">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
           <ul class="advantage-list">
-            <li class="advantage-item edgy">
+            <li class="advantage-item">
               <div class="advantage-wrap">
-                <h3 class="advantage-item-title edgy">Настоящий городок</h3>
-                <p class="advantage-item-desc edgy">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+                <h3 class="advantage-item-title">Настоящий городок</h3>
+                <p class="advantage-item-desc">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
               </div>
               <img class="sedona-city" src="images/photo-city.jpg" width="800" height="385" alt="Город Седона" />
             </li>
             <li class="advantage-item">
-              <div class="wrapwrap">
+              <div class="advantage-wrap">
                 <h3 class="advantage-item-title">Небольшая площадь</h3>
                 <p class="advantage-item-desc">Все достопримечательности находятся очень близко</p>
               </div>
             </li>
-            <li class="advantage-item tinted">
-              <div class="wrapwrap">
+            <li class="advantage-item">
+              <div class="advantage-wrap">
                 <h3 class="advantage-item-title">Красивая дорога</h3>
                 <p class="advantage-item-desc">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
               </div>
             </li>
             <li class="advantage-item">
-              <div class="wrapwrap">
+              <div class="advantage-wrap">
                 <h3 class="advantage-item-title">Мало туристов</h3>
                 <p class="advantage-item-desc">Большинство едет в Гранд Каньон и толпится там</p>
               </div>
             </li>
-            <li class="advantage-item edgy">
+            <li class="advantage-item">
               <img class="devilbridge" src="images/photo-devil.jpg" width="800" height="385" alt="Мост дьявола" />
               <div class="advantage-wrap">
-                <h3 class="advantage-item-title edgy">Там есть<br> мост дьявола</h3>
-                <p class="advantage-item-desc edgy">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
+                <h3 class="advantage-item-title">Там есть<br> мост дьявола</h3>
+                <p class="advantage-item-desc">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
               </div>
             </li>
           </ul>
@@ -92,7 +90,7 @@
           <section class="reasons">
             <h2 class="visually-hidden">Причины, по которым Седона круче, чем Гранд-Каньон!</h2>
             <ul class="reasons-list">
-              <li class="reasons-item accent">
+              <li class="reasons-item">
                 <h3 class="reasons-title home">Жильё</h3>
                 <p class="reasons-desc">Рекомендуем пожить<br> в настоящем мотеле,<br> всё как в кино!</p>
               </li>
@@ -100,7 +98,7 @@
                 <h3 class="reasons-title food">Еда</h3>
                 <p class="reasons-desc">Всегда заказывайте<br> топовый фирменный бургер, вы не разочаруетесь!</p>
               </li>
-              <li class="reasons-item accent">
+              <li class="reasons-item">
                 <h3 class="reasons-title souvenirs">Сувениры</h3>
                 <p class="reasons-desc">Не только китайского,<br> но и настоящего местного производства!</p>
               </li>
@@ -163,6 +161,98 @@
           </a>
         </section>
       </footer>
+    </div>
+    <div class="modal-container modal-container-close">
+      <div class="modal modal-auth">
+        <button class="modal-close-button">
+          <svg class="close-button-modal" xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none" viewBox="0 0 14 14">
+            <path d="M14 1.292 12.708 0 7 5.708 1.292 0 0 1.292 5.708 7 0 12.708 1.292 14 7 8.292 12.708 14 14 12.708 8.292 7 14 1.292Z"/>
+          </svg>
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+        <section class="modal-content">
+          <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+          <form class="booking-form" action="https://echo.htmlacademy.ru/" method="post">
+            <fieldset class="booking-fieldset long-fieldset">
+              <label class="booking-label" for="arriving-date">
+                Дата Заезда:
+              </label>
+              <input class="booking-date input" id="arriving-date" name="arriving-date" type="text" placeholder="Укажите дату" value="27 апреля 2020" required>
+              <span class="infomassage warning">
+                Мы не можем отправить вас в прошлое.
+              </span>
+            </fieldset>
+            <fieldset class="booking-fieldset long-fieldset">
+              <label class="booking-label" for="leaving-date">
+                Дата Выезда:
+              </label>
+              <input class="booking-date input" id="leaving-date" name="leaving-date" type="text" placeholder="Укажите дату" value="1 сентября 2023" required>
+              <span class="infomassage">
+                На эти даты есть свободные номера. Пока есть.
+              </span>
+            </fieldset>
+            <fieldset class="booking-fieldset">
+                <legend class="visually-hidden">
+                  Количество взрослых
+                </legend>
+                <label class="booking-label" for="adults">
+                  Взрослые:
+                </label>
+                <div class="booking-guest-container">
+                  <span class="decrease-increase" role="button" tabindex="0">
+                    <svg class="decrease-increase-icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="14" height="2" fill="none" viewBox="0 0 14 2">
+                      <path d="M0 0v2h14V0H0Z"/>
+                    </svg>
+                    </svg>
+                  </span>
+                  <input class="numberguest" id="adults" name="adults" type="number" value="2" required>
+                  <span class="decrease-increase" role="button" tabindex="0">
+                    <svg class="decrease-increase-icon"  aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none" viewBox="0 0 14 14">
+                      <path d="M14 6H8V0H6v6H0v2h6v6h2V8h6V6Z"/>
+                    </svg>
+                  </span>
+                </div>
+              </fieldset>
+
+              <fieldset class="booking-fieldset">
+                <legend class="visually-hidden">
+                  Количество детей
+                </legend>
+                <span class="booking-label">
+                  <label class="booking-label-kids" for="kids">
+                    Дети:
+                  </label>
+                  <span class="tooltip">
+                    <button class="tooltip-button" type="button">
+                      <span class="visually-hidden">Всплавающее уведомление</span>
+                    </button>
+                    <span class="tooltip-content">
+                      Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.
+                    </span>
+                  </span>
+                </span>
+                <div class="booking-guest-container">
+                  <span class="decrease-increase" role="button" tabindex="0">
+                    <svg class="decrease-increase-icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="14" height="2" fill="none" viewBox="0 0 14 2">
+                      <path d="M0 0v2h14V0H0Z"/>
+                    </svg>
+                  </span>
+                  <input class="numberguest" id="adults" name="adults" type="number" value="2" required>
+                  <span class="decrease-increase" role="button" tabindex="0">
+                    <svg class="decrease-increase-icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none" viewBox="0 0 14 14">
+                      <path d="M14 6H8V0H6v6H0v2h6v6h2V8h6V6Z"/>
+                    </svg>
+                  </span>
+                </div>
+              </fieldset>
+
+            <button class="modal-submit-button button-link" type="submit">
+              Найти
+            </button>
+
+          </form>
+        </section>
+      </div>
     </div>
   </body>
 
