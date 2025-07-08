@@ -50,7 +50,7 @@
           <h2 class="advantage-title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
           <p class="advantage-dsc">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
           <ul class="advantage-list">
-            <li class="advantage-item">
+            <li class="advantage-item has-image">
               <div class="advantage-wrap">
                 <h3 class="advantage-item-title">Настоящий городок</h3>
                 <p class="advantage-item-desc">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
@@ -75,7 +75,7 @@
                 <p class="advantage-item-desc">Большинство едет в Гранд Каньон и толпится там</p>
               </div>
             </li>
-            <li class="advantage-item">
+            <li class="advantage-item has-image">
               <img class="devilbridge" src="images/photo-devil.jpg" width="800" height="385" alt="Мост дьявола" />
               <div class="advantage-wrap">
                 <h3 class="advantage-item-title">Там есть<br> мост дьявола</h3>
@@ -110,14 +110,15 @@
           <p class="search-motel-desc">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
           <a class="search-motel-sedona-btn" href="catalog.html">Поиск гостиницы в Седоне</a>
         </section>
-        <section class="newsletter-elegant">
-          <div class="newsletter-all">
+        <section class="newsletter elegant">
+          <div class="newsletter-wrap">
             <h2 class="newsletter-title">Подпишитесь на рассылку</h2>
             <p class="newsletter-desc">Только полезная информация и никакого спама, честное бойскаутское!</p>
             <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
               <label class="visually-hidden" for="newsletter-email">Email</label>
-              <input class="field" placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email" required />
-              <button class="button newsletter-email-button" type="submit">
+              <input class="field" placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email"
+                required />
+              <button class="newsletter-button" type="submit">
                 <span class="button-name">Подписаться</span>
               </button>
             </form>
@@ -177,20 +178,20 @@
               <label class="booking-label" for="arriving-date">
                 Дата Заезда:
               </label>
-              <input class="booking-date input" id="arriving-date" name="arriving-date" type="text" placeholder="Укажите дату" value="27 апреля 2020" required>
-              <span class="infomassage warning">
-                Мы не можем отправить вас в прошлое.
-              </span>
+              <input class="booking-date-input" id="arriving-date" name="arriving-date" type="text" placeholder="Укажите дату" value="27 апреля 2020" required>
             </fieldset>
+            <span class="infomassage warning">
+              Мы не можем отправить вас в прошлое.
+            </span>
             <fieldset class="booking-fieldset long-fieldset">
               <label class="booking-label" for="leaving-date">
                 Дата Выезда:
               </label>
-              <input class="booking-date input" id="leaving-date" name="leaving-date" type="text" placeholder="Укажите дату" value="1 сентября 2023" required>
-              <span class="infomassage">
-                На эти даты есть свободные номера. Пока есть.
-              </span>
+              <input class="booking-date-input" id="leaving-date" name="leaving-date" type="text" placeholder="Укажите дату" value="1 сентября 2023" required>
             </fieldset>
+            <span class="infomassage">
+              На эти даты есть свободные номера. Пока есть.
+            </span>
             <fieldset class="booking-fieldset">
                 <legend class="visually-hidden">
                   Количество взрослых
@@ -202,7 +203,6 @@
                   <span class="decrease-increase" role="button" tabindex="0">
                     <svg class="decrease-increase-icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="14" height="2" fill="none" viewBox="0 0 14 2">
                       <path d="M0 0v2h14V0H0Z"/>
-                    </svg>
                     </svg>
                   </span>
                   <input class="numberguest" id="adults" name="adults" type="number" value="2" required>
