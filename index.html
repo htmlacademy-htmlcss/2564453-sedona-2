@@ -118,9 +118,7 @@
               <label class="visually-hidden" for="newsletter-email">Email</label>
               <input class="field" placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email"
                 required />
-              <button class="newsletter-button" type="submit">
-                <span class="button-name">Подписаться</span>
-              </button>
+              <button class="newsletter-button" type="submit">Подписаться</button>
             </form>
           </div>
         </section>
@@ -175,23 +173,23 @@
           <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
           <form class="booking-form" action="https://echo.htmlacademy.ru/" method="post">
             <fieldset class="booking-fieldset long-fieldset">
-              <label class="booking-label" for="arriving-date">
+              <label class="booking-label long" for="arriving-date">
                 Дата Заезда:
               </label>
-              <input class="booking-date-input" id="arriving-date" name="arriving-date" type="text" placeholder="Укажите дату" value="27 апреля 2020" required>
+              <div class="booking-date-wrap">
+                <input class="booking-date-input" id="arriving-date" name="arriving-date" type="text" placeholder="Укажите дату" value="27 апреля 2020" required>
+                <span class="info-massage warning">Мы не можем отправить вас в прошлое.</span>
+              </div>
             </fieldset>
-            <span class="infomassage warning">
-              Мы не можем отправить вас в прошлое.
-            </span>
             <fieldset class="booking-fieldset long-fieldset">
-              <label class="booking-label" for="leaving-date">
+              <label class="booking-label long" for="leaving-date">
                 Дата Выезда:
               </label>
-              <input class="booking-date-input" id="leaving-date" name="leaving-date" type="text" placeholder="Укажите дату" value="1 сентября 2023" required>
+              <div class="booking-date-wrap">
+                <input class="booking-date-input" id="leaving-date" name="leaving-date" type="text" placeholder="Укажите дату" value="1 сентября 2023" required>
+                <span class="info-massage">На эти даты есть свободные номера. Пока есть.</span>
+              </div>
             </fieldset>
-            <span class="infomassage">
-              На эти даты есть свободные номера. Пока есть.
-            </span>
             <fieldset class="booking-fieldset">
                 <legend class="visually-hidden">
                   Количество взрослых
@@ -246,9 +244,7 @@
                 </div>
               </fieldset>
 
-            <button class="modal-submit-button button-link" type="submit">
-              Найти
-            </button>
+            <button class="modal-submit-button button-link" type="submit">Найти</button>
 
           </form>
         </section>

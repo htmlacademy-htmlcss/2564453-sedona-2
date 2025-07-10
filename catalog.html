@@ -66,17 +66,17 @@
             <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
               <fieldset class="catalog-filter-group type-chek">
                 <legend class="catalog-filter-title">Инфраструктура:</legend>
-                <label class="controls" for="pool">
+                <label class="controls checkbox-type" for="pool">
                   <input class="control-input visually-hidden" type="checkbox" name="pool" id="pool" checked />
                   <span class="catalog-filter-item">Бассейн</span>
                 </label>
 
-                <label class="controls" for="parking">
+                <label class="controls checkbox-type" for="parking">
                   <input class="control-input visually-hidden" type="checkbox" name="parking" id="parking" checked />
                   <span class="catalog-filter-item">Парковка</span>
                 </label>
 
-                <label class="controls" for="wifi">
+                <label class="controls  checkbox-type" for="wifi">
                   <input class="control-input visually-hidden" type="checkbox" name="wifi" id="wifi" />
                   <span class="catalog-filter-item">Wi-Fi</span>
                 </label>
@@ -230,7 +230,7 @@
 
           <ul class="pagination">
             <li class="pagination-item">
-              <span class="pagination-link">1</span>
+              <a class="pagination-link current-page">1</a>
             </li>
             <li class="pagination-item">
               <a class="pagination-link" href="#">2</a>
@@ -242,7 +242,7 @@
               <a class="pagination-link" href="#">4</a>
             </li>
             <li class="pagination-item">
-              <span class="pagination-more">...</span>
+              <a class="pagination-link next-group-pages" href="#">...</a>
             </li>
             <li class="pagination-item">
               <a class="pagination-link" href="#">10</a>
@@ -257,9 +257,7 @@
               <label class="visually-hidden" for="newsletter-email">Email</label>
               <input class="field" placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email"
                 required />
-              <button class="newsletter-button" type="submit">
-                <span class="button-name">Подписаться</span>
-              </button>
+              <button class="newsletter-button" type="submit">Подписаться</button>
             </form>
           </div>
         </section>

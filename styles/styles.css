@@ -18,10 +18,12 @@ html{
   height: 100%;
 }
 
+*,
 *::before,
 *::after {
   box-sizing: border-box;
 }
+
 
 body{
   font-family: "PT Sans", sans-serif;
@@ -72,7 +74,9 @@ body{
 }
 
 .site-navigation-item{
-  padding: 0 16px;
+  padding: 20px 16px;
+  --padding-x: 16px;
+  position: relative;
   display: block;
 }
 
@@ -82,10 +86,7 @@ body{
   color: #000000;
   text-decoration: none;
   text-align: center;
-  display: inline-block;
-  box-sizing: border-box;
-  padding: 20px 0px;
-  position: relative;
+  display: block;
 }
 
 .navigation-link:hover::after,
@@ -94,7 +95,8 @@ body{
   position: absolute;
   left: 0;
   bottom: -1px;
-  width: 100%;
+  left: var(--padding-x);
+  width: calc(100% - (var(--padding-x) * 2));
   height: 2px;
   background-color: #756257;
 }
@@ -171,6 +173,7 @@ body{
 }
 
 .header-button{
+  width: 160px;
   font-size: 16px;
   line-height: 20px;
   text-decoration: none;
@@ -180,7 +183,7 @@ body{
   padding: 8px 34px;
   display: flex;
   justify-content: center;
-  align-items: center;
+  text-align: center;
   border-radius: 4px;
   margin-left: 20px;
 }
@@ -636,6 +639,7 @@ body{
 }
 
 .modal{
+  box-sizing: content-box;
   position: relative;
   margin: auto;
   padding: 65px 70px;
@@ -747,20 +751,31 @@ body{
   line-height: 24px;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 4px;
+  margin-bottom: 23px;
+  align-items: flex-start;
 }
 
-.infomassage{
+.booking-date-wrap{
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.booking-label{
+  font-size: 20px;
+}
+
+.booking-label.long{
+  margin-top: 12px;
+}
+
+.info-massage{
   width: 371px;
-  top: 52px;
-  left: 157px;
   line-height: 21px;
   font-weight: 400;
   font-size: 16px;
-  bottom: 50px;
   color: #333333;
-  margin-bottom: 23px;
-  margin-left: 157px;
+  margin-left: 20px;
 }
 
 .warning{
@@ -775,7 +790,7 @@ body{
   background-color: #F2F2F2;
   border-radius: 4px;
   border: none;
-  box-sizing: border-box;
+
   font-weight: 700;
   line-height: 24px;
   font-family: inherit;
@@ -1194,12 +1209,15 @@ body{
   left: 0;
   width: 20px;
   height: 20px;
-  border-radius: 4px;
   background-color: #FFFFFF;
 }
 
 .controls.radiotype::before{
   border-radius: 50%;
+}
+
+.checkbox-type::before{
+  border-radius: 4px;
 }
 
 .control-input[type="checkbox"]:checked + .catalog-filter-item::before {
@@ -1380,9 +1398,9 @@ body{
 
 .select-control:hover,
 .select-control:focus{
-  border: 2px solid #68A2CA;
+  border-color: #68A2CA;
   outline: none;
-  transition: border 550ms ease-in-out;
+  transition: border-color 550ms ease-in-out;
 }
 
 .select-control:disabled{
@@ -1628,60 +1646,49 @@ body{
 }
 
 .pagination-item{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0;
-  padding: 0;
-  background-color: #82B3D3;
-  width: 60px;
-  height: 60px;
-  border-radius: 4px;
-}
 
-.pagination .pagination-item:first-child .pagination-link{
-  background-color: #F2F2F2;
-  color: #000000;
-  border-radius: 4px;
-}
-
-.pagination .pagination-item:not(:first-child):not(:nth-last-child(2)):hover{
-  background-color: #68A2CA;
-  outline: 1px solid #82B3D3;
-  transition: background-color 350ms ease-in-out, color 350ms;
-}
-
-.pagination .pagination-item:nth-last-child(2){
-  background-color: #FFFFFF;
-}
-
-.pagination-item.click:focus{
-  background-color: #68A2CA;
-  outline: none;
-}
-
-.pagination-item.click:active{
-  background-color: #82B3D3;
-  color: #FFFFFF4D;
-}
-
-.pagination-link:focus{
-  outline: none;
-  border: 1px solid #82B3D3;
-  border-radius: 4px;
 }
 
 .pagination-link{
-  display: flex;
   font-size: 20px;
   line-height: 36px;
   font-weight: 700;
-  color: #FFFFFF;
   text-decoration: none;
+  color: #FFFFFF;
   width: 60px;
   height: 60px;
+  padding: 4px;
+  display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #82B3D3;
+  border-radius: 4px;
+}
+
+.current-page{
+  color: #000000;
+  background-color: #F2F2F2;
+  pointer-events: none;
+}
+
+.next-group-pages{
+  background-color: #FFFFFF;
+  color: #000000;
+  font-weight: 400;
+  pointer-events: none;
+}
+
+.pagination-link:hover,
+.pagination-link:focus{
+  background-color: #68A2CA;
+  border: 1px solid #82B3D3;
+  transition: background-color 350ms ease-in-out, color 350ms;
+  outline: none;
+}
+
+.pagination-link:active{
+  color: #FFFFFF4D;
+  background-color: #82B3D3;
 }
 
 /* подписка каталога */
