@@ -533,11 +533,10 @@ body {
 .contacts {
   display: flex;
   justify-content: space-between;
-  width: 1060px;
+  width: 100%;
   text-align: center;
   align-items: center;
-  margin-top: 40px;
-  margin-bottom: 30px;
+  padding: 40px 70px 30px;
 }
 
 .socialmedia {
@@ -963,7 +962,7 @@ body {
   color: #ffffff;
   display: flex;
   flex-direction: column;
-  padding: 0 70px;
+  padding: 35px 70px 70px;
 }
 
 .hotel-sedona-choose {
@@ -971,7 +970,6 @@ body {
   display: flex;
   flex-direction: column;
   margin-bottom: 40px;
-  margin-top: 35px;
 }
 
 .inner-title {
@@ -1050,17 +1048,29 @@ body {
 .filter-hotels {
   display: flex;
   width: 100%;
-  margin-bottom: 54px;
 }
 
 .catalog-filter {
+  width: 100%;
   display: flex;
+  justify-content: space-between;
+}
+
+.wrap-chek-radio {
+  display: flex;
+  margin-left: 0;
+  gap: 70px;
+}
+
+.wrap-price-buttons {
+  display: flex;
+  margin-right: 0;
+  gap: 70px;
 }
 
 .catalog-filter-group {
   display: flex;
   flex-wrap: wrap;
-  flex-direction: column;
   border: none;
   margin: 0;
   padding: 0;
@@ -1068,22 +1078,21 @@ body {
 
 .type-chek {
   width: 151px;
-  margin-right: 70px;
 }
 
 .type-radio {
   width: 151px;
-  margin-right: 140px;
 }
 
 .price-slider {
-  margin-right: 70px;
+  display: flex;
+  flex-direction: column;
 }
 
 .price-range-minmax {
   display: flex;
   gap: 2px;
-  margin-bottom: 48px;
+  margin-bottom: 36px;
 }
 
 .input-wrapper {
@@ -1142,6 +1151,10 @@ body {
 
 /*rage bar*/
 
+.range {
+  padding: 8px 0;
+}
+
 .range-scale {
   position: relative;
   height: 4px;
@@ -1199,9 +1212,15 @@ body {
 }
 
 .controls {
-  display: block;
+  font-size: 18px;
+  line-height: 23px;
+  display: flex;
   position: relative;
   padding-left: 36px;
+  align-items: center;
+}
+
+.controls:not(:last-child) {
   margin-bottom: 16px;
 }
 
@@ -1283,7 +1302,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 32px;
-  margin-top: 56px;
+  margin-top: auto;
 }
 
 .price-submit {
@@ -1296,7 +1315,7 @@ body {
   text-transform: uppercase;
   border: none;
   width: 191px;
-  padding: 8px 2px;
+  padding: 8px 5px;
   border-radius: 4px;
   cursor: pointer;
 }
@@ -1334,9 +1353,7 @@ body {
   background-color: transparent;
   border: 3px solid transparent;
   width: 191px;
-  padding: 0;
-  padding-top: 8px;
-  padding-bottom: 8px;
+  padding: 5px 2px;
   border-radius: 4px;
   cursor: pointer;
 }
@@ -1415,10 +1432,12 @@ body {
 .sort-view {
   gap: 70px;
   display: flex;
+  flex-wrap: wrap;
 }
 
 .view {
   display: flex;
+  flex-wrap: wrap;
   gap: 8px;
   align-items: center;
   justify-content: center;
