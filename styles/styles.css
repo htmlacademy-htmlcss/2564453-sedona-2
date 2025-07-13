@@ -641,6 +641,7 @@ body {
 
 .modal-container-close {
   display: none;
+  z-index: 30;
 }
 
 .modal {
