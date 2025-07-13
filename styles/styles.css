@@ -94,9 +94,10 @@ body {
   left: 50%;
   transform: translateX(-50%);
   bottom: -1px;
-  width: calc(100% - (16px * 2));
+  width: calc(100% - 16px * 2);
   height: 2px;
   background-color: #756257;
+  z-index: 10;
 }
 
 .logo-sedona {
@@ -104,6 +105,11 @@ body {
   width: 138px;
   height: 64px;
   margin-right: 30px;
+}
+
+.logo {
+  position: absolute;
+  z-index: 10;
 }
 
 .user-menu {
@@ -210,27 +216,30 @@ body {
 
 .hero {
   background-image: url("../images/background-hero.jpg");
-  background-size: 100%;
+  background-size: cover;
   background-repeat: no-repeat;
   background-color: #83b3d333;
   display: block;
-  margin-bottom: 69px;
+  padding: 51px 0 82px;
+  position: relative;
 }
 
 .hero::after {
   content: "";
   display: block;
+  position: absolute;
+  bottom: 0;
   width: 100%;
   height: 57px;
   background-repeat: no-repeat;
   background-position: center;
   background-image: url("../images/divider-background-hero.svg");
+  background-size: cover;
 }
 
 .welcome-sedona {
-  display: flex;
+  display: block;
   margin: 0 auto;
-  padding-top: 51px;
 }
 
 /*advantages*/
@@ -240,9 +249,8 @@ body {
   line-height: 36px;
   font-weight: 700;
   text-transform: uppercase;
-  margin: 0 auto;
+  margin: 69px auto 25px;
   max-width: 620px;
-  margin-bottom: 25px;
   text-align: center;
 }
 
@@ -534,7 +542,7 @@ body {
 
 .socialmedia {
   display: flex;
-  width: 190px;
+  width: 142px;
   flex-wrap: wrap;
   margin: 0;
   padding: 0;
@@ -582,6 +590,7 @@ body {
   color: #000000;
   text-decoration: none;
   width: 720px;
+  padding: 5px 0;
 }
 
 .telephone:hover {
@@ -726,6 +735,7 @@ body {
   border-radius: 10px;
   justify-content: center;
   margin-top: 48px;
+  cursor: pointer;
 }
 
 .button-link:hover {
@@ -851,6 +861,7 @@ body {
   width: 40px;
   height: 48px;
   padding: 14px 10px;
+  cursor: pointer;
 }
 
 .decrease-increase-icon {
@@ -913,12 +924,15 @@ body {
   left: 50%;
   transform: translateX(-50%);
   margin-top: 15px;
-  display: none;
+  visibility: hidden;
+  transition: visibility 0s linear 0.4s;
 }
 
 .tooltip-button:hover + .tooltip-content,
-.tooltip-button:focus + .tooltip-content {
-  display: block;
+.tooltip-button:focus + .tooltip-content,
+.tooltip-content:hover {
+  visibility: visible;
+  transition-delay: 0s;
 }
 
 .tooltip-content::before {
@@ -949,12 +963,11 @@ body {
   color: #ffffff;
   display: flex;
   flex-direction: column;
-  margin-bottom: 50px;
+  padding: 0 70px;
 }
 
 .hotel-sedona-choose {
-  margin: 0 auto;
-  width: 1060px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   margin-bottom: 40px;
@@ -1036,8 +1049,7 @@ body {
 
 .filter-hotels {
   display: flex;
-  width: 1060px;
-  margin: 0 auto;
+  width: 100%;
   margin-bottom: 54px;
 }
 
@@ -1241,6 +1253,7 @@ body {
 .controls:hover {
   opacity: 0.6;
   transition: opacity 350ms;
+  cursor: pointer;
 }
 
 .controls:focus-within::before {
@@ -1350,8 +1363,8 @@ body {
 /* карточки */
 
 .search-results {
-  width: 1060px;
-  margin: 0 auto;
+  width: 100%;
+  padding: 50px 70px 60px 70px;
 }
 
 .sorting-results {
@@ -1457,7 +1470,7 @@ body {
 
 .hotel-card {
   display: grid;
-  grid-template-columns: repeat(2, 140px);
+  grid-template-columns: repeat(2, 1fr);
   gap: 16px 20px;
   border: 1px solid #e6e6e6;
   padding: 20px;
@@ -1637,7 +1650,6 @@ body {
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
-  margin-bottom: 60px;
 }
 
 .pagination-link {
@@ -1646,7 +1658,7 @@ body {
   font-weight: 700;
   text-decoration: none;
   color: #ffffff;
-  width: 60px;
+  min-width: 60px;
   height: 60px;
   padding: 4px;
   display: flex;
@@ -1654,6 +1666,7 @@ body {
   align-items: center;
   background-color: #82b3d3;
   border-radius: 4px;
+  border: 1px solid transparent;
 }
 
 .current-page {
@@ -1672,7 +1685,7 @@ body {
 .pagination-link:hover,
 .pagination-link:focus {
   background-color: #68a2ca;
-  border: 1px solid #82b3d3;
+  border-color: #82b3d3;
   transition: background-color 350ms ease-in-out, color 350ms;
   outline: none;
 }
@@ -1749,6 +1762,7 @@ body {
   width: 232px;
   border: none;
   border-radius: 0 4px 4px 0;
+  cursor: pointer;
 }
 
 .newsletter.elegant {
