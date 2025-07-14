@@ -2,15 +2,15 @@
 <html lang="ru">
 
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta charset="utf-8">
     <title>Гостиницы Седоны</title>
+    <link rel="icon" href="favicon.ico">
     <link rel="stylesheet" href="styles/styles.css">
   </head>
 
   <body>
     <div class="container">
-      <header class="page-header">
+      <header class="page-header" data-test="header">
         <a class="logo-sedona" href="index.html">
           <img class="logo" src="images/logo.svg" width="140" height="70" alt="Логотип Седоны" />
         </a>
@@ -42,7 +42,7 @@
           </li>
         </ul>
       </header>
-      <main class="searching">
+      <main class="searching" data-test="main">
         <section class="hotel-search">
           <div class="hotel-sedona-choose">
             <h1 class="inner-title">Гостиницы Седоны</h1>
@@ -132,7 +132,7 @@
           </section>
 
         </section>
-        <section class="search-results">
+        <section class="search-results" data-test="catalog">
           <div class="sorting-results">
             <h2 class="sorting-results-title">Найдено гостиниц: 38</h2>
             <div class="sort-view">
@@ -243,7 +243,7 @@
             </li>
           </ul>
         </section>
-        <section class="newsletter">
+        <section class="newsletter" data-test="subscribe">
           <div class="newsletter-wrap">
             <h2 class="newsletter-title">Подпишитесь на рассылку</h2>
             <p class="newsletter-desc">Только полезная информация и никакого спама, честное бойскаутское!</p>
@@ -256,7 +256,7 @@
           </div>
         </section>
       </main>
-      <footer class="main-footer">
+      <footer class="main-footer" data-test="footer">
         <section class="contacts">
           <ul class="socialmedia">
             <li class="socialmedia-item">
