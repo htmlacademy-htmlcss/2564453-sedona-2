@@ -247,7 +247,7 @@ body {
 
 .advantage-title {
   margin: 69px auto 25px;
-  max-width: 620px;
+  max-width: 622px;
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
@@ -698,13 +698,17 @@ body {
 .booking-fieldset {
   margin: 0;
   padding: 0;
-  width: 242px;
+  gap: 46px;
   border: none;
   display: flex;
   justify-content: space-between;
   align-items: center;
   font-weight: 700;
   line-height: 20px;
+}
+
+.with-tooltip {
+  gap: 82px;
 }
 
 .modal-submit-button.button-link {
@@ -1082,7 +1086,7 @@ body {
 
 .number-minmax {
   width: 100%;
-  padding: 12px 20px 12px 45px;
+  padding: 12px 20px;
   font-family: inherit;
   font-size: 18px;
   line-height: 24px;
@@ -1186,6 +1190,7 @@ body {
   font-size: 20px;
   line-height: 24px;
   font-weight: 700;
+  text-transform: capitalize;
 }
 
 .controls {
@@ -1471,15 +1476,15 @@ body {
 
 .hotel-card-link {
   grid-column: 1/-1;
-  font-size: 24px;
-  line-height: 28px;
-  font-weight: 700;
-  color: #000000;
   text-decoration: none;
 }
 
 .hotel-card-title {
   margin: 16px 0 0;
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
+  color: #000000;
 }
 
 .hotel-type {
