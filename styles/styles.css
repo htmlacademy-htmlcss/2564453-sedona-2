@@ -816,6 +816,16 @@ body {
   max-width: 91px;
 }
 
+.booking-date-input:disabled {
+  opacity: 0.4;
+  pointer-events: none;
+}
+
+.booking-guest-container:has(.numberguest:disabled) {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
 .info-massage {
   width: 371px;
   margin-left: 20px;
