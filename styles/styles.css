@@ -251,7 +251,7 @@ body {
   background-image: url("../images/background-hero.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  background-color: #68A2CA;
+  background-color: #68a2ca;
 }
 
 .hero::after {
